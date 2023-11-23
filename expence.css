@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+
+}
+#main{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    border: solid black;
+}
+.exp_head{
+    text-align: center;
+}
+.bal{
+    text-align: left;
+}

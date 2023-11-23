@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expence.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1 class="exp_head">EXPENCE TRACKER</h1>
+            <h2 class="bal">My Balance</h2>
+            <p><b>&#8377;<span id="amount">0000</span></b></p>
+        </div>
+            <div class="innerbox">
+                <div class="income">
+                    <p>INCOME</p>
+                    <p>&#8377;<span id="income">0000</span></p>
+                </div>
+                <div class="expence">
+                    <p>EXPENCE</p>
+                    <p>&#8377;<span id="expence">0000</span></p>
+                </div>
+            </div>
+            <div id="his">
+                <h2>History</h2>
+                <div id="his_body">
+                    
+                </div>
+            </div>
+                <div>
+                <h3>Add new transaction</h3>
+                    <div>
+                        <label for="text">Text</label>
+                        <input type="text" id="textInput" placeholder="Enter text...." value="" >
+                    </div>
+                    <div>   
+                        <label for="amount">
+                            Amount <br>
+                            (negative - expence, positive expence)<br>
+                        </label>
+                        <input type="number" id="amountInput" placeholder="Enter amount...." value="" >
+                    </div>
+                    
+                    <button class="btn" onclick="addTransaction()">Add transaction</button>
+            </div>
+    </div>
+    <script src="expence.js"></script>
+</body>
+</html>
